@@ -15,7 +15,7 @@ declare type SignUpParams = {
   state: string;
   postalCode: string;
   dateOfBirth: string;
-  aadhar: string;
+  ssn: string;
   email: string;
   password: string;
 };
@@ -39,7 +39,7 @@ declare type User = {
   state: string;
   postalCode: string;
   dateOfBirth: string;
-  aadhar: string;
+  ssn: string;
 };
 
 declare type NewUserParams = {
@@ -60,7 +60,7 @@ declare type Account = {
   type: string;
   subtype: string;
   appwriteItemId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type Transaction = {
@@ -89,7 +89,7 @@ declare type Bank = {
   accessToken: string;
   fundingSourceUrl: string;
   userId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type AccountTypes =
@@ -134,7 +134,7 @@ declare type NewDwollaCustomerParams = {
   state: string;
   postalCode: string;
   dateOfBirth: string;
-  aadhar: string;
+  ssn: string;
 };
 
 declare interface CreditCardProps {
@@ -203,7 +203,7 @@ declare interface BankTabItemProps {
   appwriteItemId?: string;
 }
 
-declare interface TotlaBalanceBoxProps {
+declare interface TotalBalanceBoxProps {
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;
